@@ -337,6 +337,12 @@ svg {
   gap: var(--space-s);
 }
 
-.anger__start p:first-child {
-  /* max-width: 80%; */
+.anger__skull {
+  grid-column: 1/4;
+  grid-row: 3;
+
+  background-image: url('./assets/skull-bg-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }

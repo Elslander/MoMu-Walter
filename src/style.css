@@ -193,7 +193,7 @@ svg {
 
   display: grid;
   grid-template-columns: 4fr 1fr;
-  grid-template-rows: 1fr 2fr 5fr 2fr 3fr;
+  grid-template-rows: 1fr 2fr 5fr 2fr 7fr;
   row-gap: var(--space-m);
 }
 
@@ -270,4 +270,8 @@ svg {
   display: flex;
   flex-direction: column;
   gap: var(--space-s);
+}
+
+.protest__suit {
+  grid-column: 1/4;
 }

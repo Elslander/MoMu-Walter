@@ -108,13 +108,18 @@ svg {
 
 /*! ----- MAIN ----- */
 .body__main {
-  padding: 0 var(--space-m);
+  /* padding: 0 var(--space-m); */
 }
 
 /* FOLD */
 .main__fold {
+  background-image: url('./assets/fold-bg.svg');
+  background-repeat: no-repeat;
+  background-position: 0 35%;
+
+  padding: 0 var(--space-m);
   margin-block-start: var(--space-m);
-  background-image: url('./assets/');
+  
 }
 
 .fold__title {
@@ -122,6 +127,13 @@ svg {
   text-transform: uppercase;
   text-align: center;
   line-height: 120%;
+}
+
+.fold__walter--english {
+  text-align: center;
+
+  position: relative;
+  top: var(--space-s);
 }
 
 .fold__walter--chinese {

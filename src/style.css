@@ -459,6 +459,35 @@ svg {
   grid-row: 5;
 }
 
-.healing__taker {
+/*! ----- CONCLUSION ----- */
+.main__conclusion {
+  background: var(--color-yellow) url('./assets/conclusion-bg.svg');
 
+  padding-block-start: 7rem;
+  padding-inline: var(--space-xs);
+
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: var(--space-m);
+}
+
+.conclusion__title {
+  grid-column: 1/4;
+  grid-row: 1;
+}
+
+.conclusion--chinese {
+  grid-column: 3;
+  grid-row: 1/3;
+  align-self: center;
+
+  color: var(--color-green);
+  font-size: 3.5rem;
+  writing-mode: vertical-lr;
+}
+
+.conclusion__text {
+  grid-column: 1/3;
+  grid-row: 2;
 }

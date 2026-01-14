@@ -1,6 +1,7 @@
 :root {
   /* color */
   --color-white: #fefcff;
+  --color-black: #060407;
 
   --color-red: #eb0e12;
   --color-red-medium: #bd060a;
@@ -50,6 +51,7 @@
 /*! ----- GENERAL ----- */
 * {
   box-sizing: border-box;
+  color: var(--color-black);
 }
 
 html {
@@ -369,13 +371,16 @@ svg {
 /*! ----- HEALING ----- */
 .main__healing {
   background: var(--color-red-dark) url("./assets/healing-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  /* background-size: 120%; */
 
   padding-block-start: 9rem;
   padding-inline: var(--space-xs);
 
   display: grid;
   grid-template-columns: 3fr 2fr 1fr;
-  grid-template-rows: 1fr 2fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 5fr 4fr 1fr;
   row-gap: var(--space-m);
 }
 
@@ -406,4 +411,38 @@ svg {
 
 .healing__start p:first-child {
   max-width: 80%;
+}
+
+.healing__tulip {
+  grid-column: 1/4;
+  grid-row: 3;
+
+  background-image: url("./assets/tulip-bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.healing__wolf {
+  grid-column: 1;
+  grid-row: 4;
+
+  position: relative;
+  top: -1rem;
+  left: -1rem;
+}
+
+.healing__middle {
+  grid-column: 2/4;
+  grid-row: 4;
+}
+
+.healing__end {
+  grid-column: 1/4;
+  grid-row: 5;
+
+  background-image: url('./assets/healing-hands.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

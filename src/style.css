@@ -206,6 +206,10 @@ svg {
   row-gap: var(--space-m);
 }
 
+.main__protest p {
+  color: var(--color-white);
+}
+
 .protest__title {
   grid-column: 1/4;
   grid-row: 1;
@@ -293,8 +297,6 @@ svg {
   background-position: top center;
   background-size: 140%;
 
-  color: var(--color-white);
-
   padding-block-start: 7rem;
   padding-inline: var(--space-xs);
 
@@ -302,6 +304,10 @@ svg {
   grid-template-columns: 3fr 2fr 1fr;
   grid-template-rows: 1fr 1fr 2fr 1fr;
   row-gap: var(--space-m);
+}
+
+.main__anger p {
+  color: var(--color-white);
 }
 
 .anger__title {
@@ -378,6 +384,8 @@ svg {
   padding-block-start: 9rem;
   padding-inline: var(--space-xs);
 
+  overflow-x: hidden;
+
   display: grid;
   grid-template-columns: 3fr 2fr 1fr;
   grid-template-rows: 1fr 2fr 5fr 4fr 1fr;
@@ -437,12 +445,16 @@ svg {
   grid-row: 4;
 }
 
+.healing__giver {
+  grid-column: 2/4;
+  grid-row: 4;
+  align-self: flex-end;
+
+  position: relative;
+  left: 1rem;
+}
+
 .healing__end {
   grid-column: 1/4;
   grid-row: 5;
-
-  background-image: url('./assets/healing-hands.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }

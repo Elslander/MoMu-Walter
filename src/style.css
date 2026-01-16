@@ -532,6 +532,7 @@ svg {
 .footer__top {
   display: flex;
   justify-content: space-between;
+  gap: var(--space-m);
 }
 
 .footer__logos {
@@ -543,19 +544,20 @@ svg {
 }
 
 .logo__momu {
-  max-width: fit-content;
+  height: 8rem;
 }
 
 .logos__images {
   max-width: 100%;
 
   display: flex;
-  /* gap: var(--space-m); */
+  justify-content: space-between;
+  gap: var(--space-s);
 }
 
 .logos__images img {
   width: auto;
-  height: 3rem;
+  height: 2.5rem;
 }
 
 .links__list {

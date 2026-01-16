@@ -133,7 +133,7 @@ svg {
 .nav__item {
   padding: var(--space-2xs) var(--space-s);
   border-radius: var(--space-l);
-  box-shadow: 0 0 10px lightgray;
+  box-shadow: 8px 10px 37px rgba(0,0,0,.2);
 
   display: flex;
   align-items: center;
@@ -142,7 +142,7 @@ svg {
 }
 
 .nav__item:hover {
-  box-shadow: 0 0 10px var(--color-red);
+  box-shadow: 8px 10px 37px var(--color-red-medium);
 }
 
 #allCollections {
@@ -482,7 +482,7 @@ svg {
 
 /*! ----- CONCLUSION ----- */
 .main__conclusion {
-  background: var(--color-yellow) url('./assets/conclusion-bg.svg');
+  background: var(--color-yellow) url("./assets/conclusion-bg.svg");
 
   padding-block-start: 7rem;
   padding-inline: var(--space-xs);
@@ -492,7 +492,7 @@ svg {
   grid-template-rows: 1fr 1fr;
   row-gap: var(--space-m);
 }
- 
+
 .conclusion__title {
   grid-column: 1/4;
   grid-row: 1;
@@ -561,9 +561,16 @@ svg {
 }
 
 .links__list {
+  height: 100%;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: var(--space-m);
+}
+
+.footer__item {
+  font-size: var(--fontsize-s);
+  text-decoration: underline;
 }
 
 .footer__socials {
@@ -579,8 +586,9 @@ svg {
   gap: var(--space-xs);
 }
 
-
-.socials__devine, .socials__devine p {
+.socials__devine,
+.socials__devine p {
+  font-size: var(--fontsize-xs);
   max-width: fit-content;
   display: inline-block;
 }

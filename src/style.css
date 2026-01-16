@@ -82,7 +82,7 @@ a {
 }
 
 .link::before {
-  content: "> "
+  content: "> ";
 }
 
 .link:hover {
@@ -373,8 +373,17 @@ svg {
   row-gap: var(--space-m);
 }
 
-.main__anger p {
+.main__anger p, .main__anger a {
   color: var(--color-white);
+}
+
+.anger__cta {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: flex-end;
+
+  position: relative;
+  top: -3rem;
 }
 
 .anger__title {

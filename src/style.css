@@ -515,8 +515,9 @@ svg {
 
 /*! ----- FOOTER ----- */
 .body__footer {
-  margin: var(--space-s);
+  padding: var(--space-xs);
   border-top: 1px solid var(--color-black);
+  margin: var(--space-xs);
 
   display: flex;
   flex-direction: column;
@@ -530,6 +531,7 @@ svg {
 
 .footer__top {
   display: flex;
+  justify-content: space-between;
 }
 
 .footer__logos {
@@ -537,20 +539,46 @@ svg {
 
   display: flex;
   flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.logo__momu {
+  max-width: fit-content;
 }
 
 .logos__images {
-  max-height: 30%;
+  max-width: 100%;
 
   display: flex;
-  gap: var(--space-m);
+  /* gap: var(--space-m); */
+}
+
+.logos__images img {
+  width: auto;
+  height: 3rem;
+}
+
+.links__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer__socials {
-  
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .socials__list {
   display: flex;
   gap: var(--space-xs);
+}
+
+
+.socials__devine, .socials__devine p {
+  max-width: fit-content;
+  display: inline-block;
 }

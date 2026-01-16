@@ -164,7 +164,7 @@ svg {
 .nav__item {
   padding: var(--space-2xs) var(--space-s);
   border-radius: var(--space-l);
-  box-shadow: 8px 10px 37px rgba(0,0,0,.2);
+  box-shadow: 8px 10px 37px rgba(0, 0, 0, 0.2);
 
   display: flex;
   align-items: center;
@@ -255,11 +255,12 @@ svg {
   grid-row: 5;
 }
 
-/*! ----- PROTEST ----- */
+/** PROTEST  */
 .main__protest {
-  background-image: url("./assets/protest-bg.svg");
+  background-image: url("./assets/protest-bg.svg"), linear-gradient(to bottom, var(--color-white) 50%, var(--color-navy) 50%);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top center;
+  background-size: 100%;
 
   color: var(--color-white);
 
@@ -274,7 +275,8 @@ svg {
   row-gap: var(--space-s);
 }
 
-.main__protest p, .main__protest a {
+.main__protest p,
+.main__protest a {
   color: var(--color-white);
 }
 
@@ -282,7 +284,6 @@ svg {
   grid-column: 1;
   grid-row: 1;
   align-self: flex-end;
-
 }
 
 .protest__title {
@@ -366,13 +367,13 @@ svg {
   justify-self: center;
 }
 
-/*! ----- ANGER ----- */
+/** ANGER */
 .main__anger {
-  background: var(--color-navy) url("./assets/anger-bg.svg");
+  background-image: url("./assets/anger-bg.svg"), linear-gradient(to bottom, var(--color-navy) 50%, var(--color-red-dark) 50%);
   /* background-image: url('./assets/anger-bg.svg'); */
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 140%;
+  background-size: 100%;
 
   padding-block-start: 7rem;
   padding-inline: var(--space-xs);
@@ -383,7 +384,8 @@ svg {
   row-gap: var(--space-m);
 }
 
-.main__anger p, .main__anger a {
+.main__anger p,
+.main__anger a {
   color: var(--color-white);
 }
 
@@ -458,12 +460,12 @@ svg {
   gap: var(--space-s);
 }
 
-/*! ----- HEALING ----- */
+/** HEALING */
 .main__healing {
-  background: var(--color-red-dark) url("./assets/healing-bg.svg");
+  background-image: url("./assets/healing-bg.svg"), linear-gradient(to bottom, var(--color-red-dark) 50%, var(--color-yellow) 50%);
   background-repeat: no-repeat;
   background-position: top center;
-  /* background-size: 120%; */
+  background-size: 100%;
 
   padding-block-start: 9rem;
   padding-inline: var(--space-xs);
@@ -554,7 +556,7 @@ svg {
   padding-inline-start: var(--space-s);
 }
 
-/*! ----- CONCLUSION ----- */
+/** CONCLUSION  */
 .main__conclusion {
   background: var(--color-yellow) url("./assets/conclusion-bg.svg");
 

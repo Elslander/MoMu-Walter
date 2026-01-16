@@ -55,7 +55,7 @@
 }
 
 html {
-  font-family: "ABeeZee";
+  font-family: "Instrument Sans";
 }
 
 h1,
@@ -76,6 +76,27 @@ a {
 
 p {
   line-height: 120%;
+  font-weight: 500;
+}
+
+.main__fold p .highlight {
+  color: var(--color-red-medium);
+}
+
+.main__protest p .highlight {
+  color: var(--color-yellow);
+}
+
+.main__anger p .highlight {
+  color: var(--color-yellow);
+}
+
+.main__healing p .highlight {
+  color: var(--color-red-medium);
+}
+
+.main__conclusion p .highlight {
+  color: var(--color-green);
 }
 
 img,

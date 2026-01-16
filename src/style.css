@@ -335,7 +335,7 @@ svg {
   grid-column: 1/3;
   grid-row: 1;
 
-  color: var(--color-green);
+  color: var(--color-yellow);
 }
 
 .anger--chinese {
@@ -344,7 +344,7 @@ svg {
 
   font-size: 3.5rem;
 
-  color: var(--color-yellow);
+  color: var(--color-green);
 
   writing-mode: vertical-lr;
 }

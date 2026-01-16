@@ -489,11 +489,12 @@ svg {
 
   display: grid;
   grid-template-columns: 3fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
   row-gap: var(--space-m);
 }
 
 .conclusion__title {
+  font-size: 4rem;
   grid-column: 1/4;
   grid-row: 1;
 }
@@ -501,7 +502,7 @@ svg {
 .conclusion--chinese {
   grid-column: 3;
   grid-row: 1/3;
-  align-self: center;
+  /* align-self: center; */
 
   color: var(--color-green);
   font-size: 3.5rem;

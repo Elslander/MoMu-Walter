@@ -99,6 +99,11 @@ p {
   color: var(--color-green);
 }
 
+.chinese {
+  color: var(--color-green) !important;
+  font-weight: normal !important;
+}
+
 img,
 svg {
   width: 100%;
@@ -262,7 +267,6 @@ svg {
   grid-column: 3;
   grid-row: 1/3;
 
-  color: var(--color-green);
   font-size: 3.5rem;
   writing-mode: vertical-lr;
 }
@@ -344,8 +348,6 @@ svg {
 
   font-size: 3.5rem;
 
-  color: var(--color-green);
-
   writing-mode: vertical-lr;
 }
 
@@ -424,8 +426,8 @@ svg {
   grid-column: 3;
   grid-row: 1/3;
 
-  color: var(--color-green);
   font-size: 3.5rem;
+
   writing-mode: vertical-lr;
 }
 
@@ -502,9 +504,7 @@ svg {
 .conclusion--chinese {
   grid-column: 3;
   grid-row: 1/3;
-  /* align-self: center; */
 
-  color: var(--color-green);
   font-size: 3.5rem;
   writing-mode: vertical-lr;
 }

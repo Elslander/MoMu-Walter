@@ -518,8 +518,8 @@ svg {
 
   display: grid;
   grid-template-columns: 3fr 2fr 1fr;
-  grid-template-rows: 1fr 2fr;
-  row-gap: var(--space-m);
+  grid-template-rows: 1fr 2fr 1fr;
+  row-gap: var(--space-s);
 }
 
 .conclusion__title {
@@ -539,6 +539,13 @@ svg {
 .conclusion__text {
   grid-column: 1/3;
   grid-row: 2;
+}
+
+.conclusion__cta {
+  grid-column: 1;
+  grid-row: 3;
+
+  height: fit-content;
 }
 
 /*! ----- FOOTER ----- */

@@ -483,14 +483,14 @@ svg {
   background-position: top center;
   background-size: 101%;
 
-  padding-block-start: 9rem;
+  padding-block-start: 35%;
   padding-inline: var(--space-xs);
 
   overflow-x: hidden;
 
   display: grid;
   grid-template-columns: 3fr 2fr 1fr;
-  grid-template-rows: 1fr 2fr 5fr 4fr 1fr;
+  grid-template-rows: 1fr 2fr 5fr 5fr;
   row-gap: var(--space-m);
 }
 
@@ -547,7 +547,7 @@ svg {
   grid-row: 4;
 
   position: relative;
-  top: -1rem;
+  /* top: -1rem; */
   left: -1rem;
 }
 
@@ -782,6 +782,60 @@ svg {
     grid-column: 2/4;
     grid-row: 3;
     align-self: center;
+  }
+
+  .main__healing {
+    padding-inline: var(--space-xl);
+
+    grid-template-rows: 1fr 4fr 5.5fr;
+  }
+
+  .healing__title {
+    height: fit-content;
+  }
+
+  .healing__start {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .healing__tulip {
+    grid-column: 2/4;
+    grid-row: 2;
+  }
+
+  .healing__wolf {
+    grid-column: 1;
+    grid-row: 3;
+
+    width: 75%;
+
+    position: relative;
+    left: -4rem;
+  }
+
+  .healing__middle {
+    grid-column: 2/4;
+    grid-row: 3;
+
+    height: fit-content;
+  }
+
+  .healing__giver {
+    grid-column: 2/4;
+    grid-row: 3;
+    justify-self: flex-end;
+    align-self: flex-end;
+
+    /* width: 75%; */
+
+    position: relative;
+    left: 4rem;
+  }
+
+  .healing__end {
+    grid-column: 1/4;
+    grid-row: 4;
   }
 }
 

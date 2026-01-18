@@ -194,10 +194,6 @@ svg {
 }
 
 /*! ----- MAIN ----- */
-.body__main {
-  /* padding: 0 var(--space-m); */
-}
-
 /** FOLD */
 .main__fold {
   background-image: url("./assets/fold-bg.svg");
@@ -205,15 +201,12 @@ svg {
   background-size: contain;
   background-position: 0 40%;
 
-  /* height: 100dvh; */
   padding: 0 var(--space-m);
   margin-block-start: var(--space-m);
 
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 2fr 1fr 2fr 1fr 2fr;
-  /* column-gap: var(--space-s); */
-  /* row-gap: var(--space-m); */
 }
 
 .fold__title {
@@ -353,7 +346,6 @@ svg {
 
 .protest__flower {
   grid-column: 1/4;
-  /* grid-row: 3; */
 
   position: relative;
   z-index: 10;
@@ -382,7 +374,6 @@ svg {
 .main__anger {
   background-image: url("./assets/anger-bg.svg"),
     linear-gradient(to bottom, var(--color-navy) 20%, var(--color-red-dark) 58%);
-  /* background-image: url('./assets/anger-bg.svg'); */
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 101%;
@@ -405,9 +396,6 @@ svg {
   grid-column: 1;
   grid-row: 1;
   align-self: flex-end;
-
-  /* position: relative;
-  top: -3rem; */
 }
 
 .anger__title {
@@ -440,7 +428,6 @@ svg {
   grid-row: 2;
 
   padding-inline-start: var(--space-xs);
-  /* margin-block-start: -1.25rem; */
 }
 
 .anger__start p:first-child {
@@ -536,7 +523,6 @@ svg {
   grid-row: 4;
 
   position: relative;
-  /* top: -1rem; */
   left: -1rem;
 }
 
@@ -731,7 +717,6 @@ svg {
     grid-column: 1;
     grid-row: 2;
 
-    /* width: 60%; */
     padding: var(--space-m);
   }
 
@@ -821,8 +806,6 @@ svg {
     grid-row: 3;
     justify-self: flex-end;
     align-self: flex-end;
-
-    /* width: 75%; */
 
     position: relative;
     left: 4rem;

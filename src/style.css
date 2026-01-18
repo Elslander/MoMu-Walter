@@ -24,14 +24,14 @@
   --space-2xl: clamp(4rem, 3.6667rem + 1.4815vw, 5rem);
 
   /* FONTSIZE */
-  --fontsize-3xs: clamp(0.5787rem, 0.5583rem + 0.0908vw, 0.64rem);
-  --fontsize-2xs: clamp(0.6944rem, 0.6593rem + 0.1564vw, 0.8rem);
-  --fontsize-xs: clamp(0.8333rem, 0.7778rem + 0.2469vw, 1rem);
-  --fontsize-s: clamp(1rem, 0.9167rem + 0.3704vw, 1.25rem);
-  --fontsize-m: clamp(1.2rem, 1.0792rem + 0.537vw, 1.5625rem);
-  --fontsize-l: clamp(1.44rem, 1.269rem + 0.7602vw, 1.9531rem);
-  --fontsize-xl: clamp(1.728rem, 1.4902rem + 1.0569vw, 2.4414rem);
-  --fontsize-2xl: clamp(2.0736rem, 1.7475rem + 1.4491vw, 3.0518rem);
+  --fontsize-3xs: clamp(0.5787rem, 0.4909rem + 0.3576vw, 0.768rem);
+  --fontsize-2xs: clamp(0.6944rem, 0.5712rem + 0.5016vw, 0.96rem);
+  --fontsize-xs: clamp(0.8333rem, 0.6632rem + 0.6926vw, 1.2rem);
+  --fontsize-s: clamp(1rem, 0.768rem + 0.9445vw, 1.5rem);
+  --fontsize-m: clamp(1.2rem, 0.8868rem + 1.2751vw, 1.875rem);
+  --fontsize-l: clamp(1.44rem, 1.0207rem + 1.7072vw, 2.3438rem);
+  --fontsize-xl: clamp(1.728rem, 1.1704rem + 2.27vw, 2.9297rem);
+  --fontsize-2xl: clamp(2.0736rem, 1.3365rem + 3.0007vw, 3.6621rem);
 }
 
 /*? ----- font ----- */
@@ -206,7 +206,8 @@ svg {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 2fr 1fr 2fr 1fr 2fr;
-  column-gap: var(--space-s);
+  /* column-gap: var(--space-s); */
+  /* row-gap: var(--space-m); */
 }
 
 .fold__title {
@@ -217,6 +218,8 @@ svg {
   text-transform: uppercase;
   text-align: center;
   line-height: 120%;
+
+    margin-block-end: var(--space-s);
 }
 
 .fold__walter--chinese {
@@ -280,7 +283,7 @@ svg {
 
   display: grid;
   grid-template-columns: 3fr 2fr 1fr;
-  grid-template-rows: 1fr 2fr 5fr 1fr 6fr;
+  grid-template-rows: 1fr 2fr 5fr 2fr 6fr;
   row-gap: var(--space-s);
 }
 
@@ -707,6 +710,14 @@ svg {
     display: flex;
   }
 
+  h2 {
+    font-size: 5.5rem !important;
+  }
+
+  .chinese {
+    font-size: 4.5rem;
+  }
+
   .main__fold {
     background-image: url("./assets/fold-bg-desktop.svg");
     background-size: contain;
@@ -724,6 +735,10 @@ svg {
     padding-inline: var(--space-xl);
 
     grid-template-rows: 1fr 3fr 3fr;
+  }
+
+  .title__globe {
+    width: 3.8rem;
   }
 
   .protest__start {
@@ -751,7 +766,7 @@ svg {
   }
 
   .main__anger {
-    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-rows: 1.5fr 3fr 3fr;
 
     padding-inline: var(--space-xl);
   }
@@ -840,6 +855,14 @@ svg {
 }
 
 @media screen and (min-width: 50rem) {
+  h2 {
+    font-size: 7.5rem !important;
+  }
+
+  .chinese {
+    font-size: 6rem;
+  }
+
   .protest__start {
     align-self: flex-start;
   }
@@ -848,10 +871,18 @@ svg {
     grid-template-rows: 1fr 3fr 2fr;
   }
 
+  .title__globe {
+    width: 5.3rem;
+  }
+
   .protest__suit {
     grid-row: 2/4;
     align-self: flex-end;
     margin-block-start: var(--space-xl);
+  }
+
+  .main__anger {
+    grid-template-rows: 2fr 3fr 3fr;
   }
 
   .anger__start {
@@ -862,9 +893,21 @@ svg {
     grid-row: 2/4;
     align-self: flex-end;
   }
+
+  .main__healing {
+    grid-template-rows: 1.5fr 4fr 5.5fr;
+  }
 }
 
 @media screen and (min-width: 60rem) {
+  h2 {
+    font-size: 10rem !important;
+  }
+
+  .chinese {
+    font-size: 7.5rem;
+  }
+
   .main__fold {
     background-size: 75%;
     background-position: center;
@@ -887,9 +930,24 @@ svg {
   .main__protest {
     background-image: url("./assets/protest-bg-desktop.svg");
 
+    grid-template-rows: 1.5fr 3fr 2fr;
+
     padding-block-start: 40%;
     padding-inline-start: var(--space-2xl);
     margin-top: -5rem;
+  }
+
+  .title__globe {
+    width: 6.8rem;
+  }
+
+  .main__anger {
+    grid-template-rows: 2.5fr 3fr 3fr;
+  }
+
+  .healing__wolf {
+    grid-row: 2/4;
+    align-self: center;
   }
 }
 

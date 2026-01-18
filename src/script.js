@@ -5,6 +5,8 @@
 //   inertia: true,
 // });
 
+console.log('linked outside of init');
+
 const init = () => {
   console.log("linked");
 };

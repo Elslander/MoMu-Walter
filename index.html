@@ -853,7 +853,15 @@
         </div>
       </div>
     </footer>
+    <script>
+      console.log('before script load');
+    </script>
+    <script src="src/script.js"></script>
+    <script src="./src/script.js"></script>
     <script src="/src/script.js"></script>
+    <script>
+      console.log('after script load');
+    </script>
   </body>
 
 </html>

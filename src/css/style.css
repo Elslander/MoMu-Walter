@@ -236,6 +236,7 @@ svg {
   justify-self: center;
 
   text-align: center;
+  font-weight: bold;
 }
 
 .fold__cta {

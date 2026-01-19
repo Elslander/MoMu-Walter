@@ -853,7 +853,31 @@
         </div>
       </div>
     </footer>
-    <script src="src/js/script.js"></script>
+    <script>
+      console.log('before script load');
+    </script>
+    <script src="src/script.js"></script>
+    <script>
+      console.log('temp inline script');
+
+      gsap.registerPlugin(Draggable, InertiaPlugin);
+
+      Draggable.create(".pettle", {
+        type: "x,y",
+        inertia: true,
+      });
+
+      console.log('linked outside of init');
+
+      const init = () => {
+        console.log("linked");
+      };
+
+      init();
+    </script>
+    <script>
+      console.log('after script load');
+    </script>
   </body>
 
 </html>

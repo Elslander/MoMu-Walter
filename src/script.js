@@ -9,6 +9,8 @@ Draggable.create(".pettle", {
 
 const init = () => {
   console.log("not linked");
+  console.log("lellelle");
+
 };
 
 init();

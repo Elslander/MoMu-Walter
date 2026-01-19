@@ -8,9 +8,7 @@ Draggable.create(".pettle", {
 });
 
 const init = () => {
-  console.log("not linked");
-  console.log("lellelle");
-
+  console.log("file is linked");
 };
 
 init();

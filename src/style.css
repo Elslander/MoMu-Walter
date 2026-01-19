@@ -196,7 +196,7 @@ svg {
 /*! ----- MAIN ----- */
 /** FOLD */
 .main__fold {
-  background-image: url("src/assets/fold-bg.svg");
+  background-image: url("../../src/assets/fold-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 40%;

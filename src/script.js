@@ -1,3 +1,5 @@
+console.log("heyheyy");
+
 gsap.registerPlugin(Draggable, InertiaPlugin);
 
 Draggable.create(".pettle", {
@@ -5,10 +7,8 @@ Draggable.create(".pettle", {
   inertia: true,
 });
 
-console.log('linked outside of init');
-
 const init = () => {
-  console.log("linked");
+  console.log("not linked");
 };
 
 init();

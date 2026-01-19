@@ -11,9 +11,6 @@
       rel="stylesheet">
     <link rel="stylesheet" href="src/reset.css">
     <link rel="stylesheet" href="src/style.css">
-    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-    <script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
-    <script src="https://assets.codepen.io/16327/InertiaPlugin.min.js"></script>
   </head>
 
   <body>
@@ -235,7 +232,7 @@
           <path class="pettle"
             d="M477.5 448.63C497.882 481.34 488.029 524.818 455.526 545.569C423.024 566.319 379.447 556.965 358.341 524.722L294.703 293.715L477.516 448.63H477.5Z"
             fill="#FEFCFF" />
-          <path
+          <path class="center"
             d="M296.379 402.476C354.971 402.476 402.47 354.98 402.47 296.391C402.47 237.803 354.971 190.307 296.379 190.307C237.787 190.307 190.289 237.803 190.289 296.391C190.289 354.98 237.787 402.476 296.379 402.476Z"
             fill="#BD060A" />
           <path
@@ -856,25 +853,10 @@
     <script>
       console.log('before script load');
     </script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
+    <script src="https://assets.codepen.io/16327/InertiaPlugin.min.js"></script>
     <script src="src/js/script.js"></script>
-    <!-- <script>
-      console.log('temp inline script');
-
-      gsap.registerPlugin(Draggable, InertiaPlugin);
-
-      Draggable.create(".pettle", {
-        type: "x,y",
-        inertia: true,
-      });
-
-      console.log('linked outside of init');
-
-      const init = () => {
-        console.log("not linked");
-      };
-
-      init();
-    </script> -->
     <script>
       console.log('after script load');
     </script>

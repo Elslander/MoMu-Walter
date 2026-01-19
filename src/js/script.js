@@ -1,11 +1,11 @@
 gsap.registerPlugin(Draggable, InertiaPlugin);
 
-const $flowerPettles = document.querySelectorAll(".pettle");
-const $flowerMiddle = document.querySelector(".center");
+const $flowerPetals = document.querySelectorAll(".flowerPetal");
+const $flowerCenter = document.querySelector(".center");
 
 const petalState = new WeakMap();
 const intersecting = (a, b) => {
-  !(
+  return !(
     a.right < b.left ||
     a.left > b.right ||
     a.bottom < b.top ||
@@ -13,26 +13,26 @@ const intersecting = (a, b) => {
   );
 };
 
-$flowerPettles.forEach((pettle) => {
-  petalState.set(pettle, {
+$flowerPetals.forEach((petal) => {
+  petalState.set(petal, {
     overlaps: intersecting(
-      pettle.getBoundingClientRect(),
-      $flowerMiddle.getBoundingClientRect()
+      petal.getBoundingClientRect(),
+      $flowerCenter.getBoundingClientRect()
     ),
   });
 });
 
-Draggable.create(".pettle", {
+Draggable.create(".flowerPetal", {
   type: "x,y",
   inertia: true,
   onDrag() {
-    const pettleBox = this.target.getBoundingClientRect();
-    const centerBox = $flowerMiddle.getBoundingClientRect();
-    const overlaps = intersecting(pettleBox, centerBox);
+    const petalBox = this.target.getBoundingClientRect();
+    const centerBox = $flowerCenter.getBoundingClientRect();
+    const overlaps = intersecting(petalBox, centerBox);
     const previous = petalState.get(this.target)?.overlaps;
 
     if (!overlaps && previous) {
-      console.log("pettle elft center");
+      console.log("petal left flower");
       this.target.remove();
     }
 

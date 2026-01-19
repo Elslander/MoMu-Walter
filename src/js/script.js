@@ -32,13 +32,15 @@ Draggable.create(".pettle", {
     const previous = petalState.get(this.target)?.overlaps;
 
     if (!overlaps && previous) {
-      console.log("pettle elft center")
+      console.log("pettle elft center");
       this.target.remove();
     }
 
     petalState.set(this.target, { overlaps });
   },
 });
+
+console.log("file is linked here");
 
 const init = () => {
   console.log("file is linked");

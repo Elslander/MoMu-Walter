@@ -367,7 +367,34 @@ svg {
   grid-column: 1/4;
   justify-self: center;
   width: 80%;
+  height: 60%;
   margin-block-start: var(--space-m);
+
+  perspective: 600px;
+  position: relative;
+  cursor: pointer;
+}
+
+.suit__wrapper {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 600ms ease;
+}
+
+.protest__suit.isTurned .suit__wrapper {
+  transform: rotateY(180deg);
+}
+
+.suitSide {
+  backface-visibility: hidden;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+}
+
+.suit__back {
+  transform: rotateY(180deg);
+  border-radius: 10px;
 }
 
 /** ANGER */

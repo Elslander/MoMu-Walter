@@ -1,3 +1,4 @@
+//! FLOWER INTERACTION
 gsap.registerPlugin(Draggable, InertiaPlugin);
 
 const $flowerPetals = document.querySelectorAll(".flowerPetal");
@@ -40,10 +41,23 @@ Draggable.create(".flowerPetal", {
   },
 });
 
-console.log("file is linked here");
+//! CARD FLIP INTERACTION
+const flipDuration = 600;
+const $card = document.querySelector(".protest__suit");
+let switching = false;
+
+const flip = () => {
+  if (switching || !$card) return;
+  switching = true;
+  $card.classList.toggle("isTurned");
+  window.setTimeout(() => {
+    switching = false;
+  }, flipDuration);
+};
 
 const init = () => {
   console.log("file is linked");
+  $card?.addEventListener("click", flip);
 };
 
 init();

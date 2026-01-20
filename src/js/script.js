@@ -56,22 +56,51 @@ const flip = () => {
 };
 
 //! ANGER MAN INTERACTION
-const $angerMan = document.querySelector('.anger__man');
-const $fireHead = document.querySelector('.fireHead');
-const $frustration = document.querySelector('.frustration');
+const $angerMan = document.querySelector(".anger__man");
+const $fireHead = document.querySelector(".fireHead");
+const $frustration = document.querySelector(".frustration");
 
-$fireHead.classList.toggle('fireHead--inactive');
-$frustration.classList.toggle('frustration--inactive');
+$fireHead.classList.toggle("fireHead--inactive");
+$frustration.classList.toggle("frustration--inactive");
 
 const changeMood = () => {
-  $fireHead.classList.toggle('fireHead--inactive');
-  $frustration.classList.toggle('frustration--inactive');
-}
+  $fireHead.classList.toggle("fireHead--inactive");
+  $frustration.classList.toggle("frustration--inactive");
+};
+
+gsap.registerPlugin(Draggable);
+
+//! TULIP INTERACTION
+// const maxDistance = 100;
+
+// Draggable.create("#flowerTop", {
+//   type: "x,y",
+//   inertia: true,
+
+//   onDrag() {
+//     const distance = Math.hypot(this.x, this.y);
+
+//     if (distance > maxDistance) {
+//       const angle = Math.atan2(this.y, this.x);
+//       this.x = Math.cos(angle) * maxDistance;
+//       this.y = Math.sin(angle) * maxDistance;
+//     }
+//   },
+
+//   onRelease() {
+//     gsap.to(this.target, {
+//       x: 0,
+//       y: 0,
+//       duration: 0.6,
+//       ease: "elastic.out(1, 0.4)",
+//     });
+//   }
+// });
 
 const init = () => {
   console.log("file is linked");
   $card?.addEventListener("click", flip);
-  $angerMan.addEventListener('click', changeMood);
+  $angerMan.addEventListener("click", changeMood);
 };
 
 init();

@@ -227,11 +227,13 @@ svg {
   line-height: 120%;
 
   margin-block-end: var(--space-s);
+
+  z-index: +1000;
 }
 
 .fold__walter--chinese {
   grid-column: 1;
-  grid-row: 2/6;
+  grid-row: 1/4;
 
   writing-mode: vertical-lr;
   color: var(--color-green);
@@ -999,12 +1001,20 @@ svg {
 
   .main__fold {
     background-size: 75%;
-    background-position: center;
+    background-position: 50% 35%;
+
+    grid-template-rows: 1fr 1fr 2fr;
+  }
+
+  .fold__start {
+    grid-row: 4;
   }
 
   .fold__cta {
-    grid-row: 5;
-    align-self: flex-start;
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+    justify-self: flex-end;
 
     margin-block-start: var(--space-m);
   }

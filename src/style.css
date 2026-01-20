@@ -227,11 +227,13 @@ svg {
   line-height: 120%;
 
   margin-block-end: var(--space-s);
+
+  z-index: +1000;
 }
 
 .fold__walter--chinese {
   grid-column: 1;
-  grid-row: 2/6;
+  grid-row: 1/4;
 
   writing-mode: vertical-lr;
   color: var(--color-green);
@@ -359,6 +361,10 @@ svg {
   position: relative;
   z-index: 10;
   overflow: visible;
+}
+
+.protest__flower .word {
+  fill: var(--color-navy);
 }
 
 .pettle {
@@ -513,6 +519,24 @@ svg {
   background-position: center;
 }
 
+.anger__skull .skullEye {
+  filter: blur(2px);
+
+  animation: glowEyes 2s infinite;
+}
+
+@keyframes glowEyes {
+  0% {
+    fill: var(--color-red-dark);
+  }
+  50% {
+    fill: var(--color-red);
+  }
+  100% {
+    fill: var(--color-red-dark);
+  }
+}
+
 .anger__end {
   grid-column: 1/4;
   grid-row: 4;
@@ -660,6 +684,25 @@ svg {
 
   position: relative;
   left: 1rem;
+
+  animation: giving 5s infinite;
+}
+
+@keyframes giving {
+  0% {
+    translate: 100% -25%;
+    rotate: -6deg;
+  }
+  
+  50% {
+    translate: 0% -6%;
+    rotate: 6deg;
+  }
+
+  100% {
+    translate: 100% -25%;
+    rotate: -6deg;
+  }
 }
 
 /** CONCLUSION  */
@@ -852,6 +895,26 @@ svg {
     grid-row: 3;
   }
 
+  .suitTie {
+    transform-origin: 50% 0%;
+
+    animation: tieSwing 2s infinite;
+  }
+
+  @keyframes tieSwing {
+    0% {
+      rotate: -2deg;
+    }
+
+    50% {
+      rotate: 2deg;
+    }
+
+    100% {
+      rotate: -2deg;
+    }
+  }
+
   .main__anger {
     grid-template-rows: 1.5fr 3fr 3fr;
 
@@ -995,12 +1058,20 @@ svg {
 
   .main__fold {
     background-size: 75%;
-    background-position: center;
+    background-position: 50% 35%;
+
+    grid-template-rows: 1fr 1fr 2fr;
+  }
+
+  .fold__start {
+    grid-row: 4;
   }
 
   .fold__cta {
-    grid-row: 5;
-    align-self: flex-start;
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+    justify-self: flex-end;
 
     margin-block-start: var(--space-m);
   }

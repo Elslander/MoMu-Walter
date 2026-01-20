@@ -55,9 +55,23 @@ const flip = () => {
   }, flipDuration);
 };
 
+//! ANGER MAN INTERACTION
+const $angerMan = document.querySelector('.anger__man');
+const $fireHead = document.querySelector('.fireHead');
+const $frustration = document.querySelector('.frustration');
+
+$fireHead.classList.toggle('fireHead--inactive');
+$frustration.classList.toggle('frustration--inactive');
+
+const changeMood = () => {
+  $fireHead.classList.toggle('fireHead--inactive');
+  $frustration.classList.toggle('frustration--inactive');
+}
+
 const init = () => {
   console.log("file is linked");
   $card?.addEventListener("click", flip);
+  $angerMan.addEventListener('click', changeMood);
 };
 
 init();

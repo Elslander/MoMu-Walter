@@ -361,6 +361,10 @@ svg {
   overflow: visible;
 }
 
+.protest__flower .word {
+  fill: var(--color-navy);
+}
+
 .pettle {
   position: relative;
 }

@@ -114,6 +114,7 @@ p {
   line-height: 120%;
   font-weight: 500;
   font-size: var(--fontsize-s);
+  text-wrap: pretty;
 
   max-width: 60ch;
 
@@ -233,11 +234,12 @@ svg {
 
 .fold__walter--chinese {
   grid-column: 1;
-  grid-row: 1/4;
+  grid-row: 2/5;
 
   writing-mode: vertical-lr;
   color: var(--color-green);
   font-size: 4.3rem;
+  white-space: nowrap;
 }
 
 .fold__walter--english {
@@ -1115,11 +1117,17 @@ svg {
     background-size: 75%;
     background-position: 50% 35%;
 
-    grid-template-rows: 1fr 1fr 2fr;
+    height: 100dvh;
+
+    grid-template-rows: 1fr 2fr 2fr;
   }
 
   .fold__start {
-    grid-row: 4;
+    grid-row: 3;
+    align-self: flex-start;
+
+    position: relative;
+    top: 12rem;
   }
 
   .fold__cta {
@@ -1132,7 +1140,7 @@ svg {
   }
 
   .fold__start p {
-    max-width: 50ch;
+    max-width: 80%;
 
     position: relative;
     top: 7.5rem;
@@ -1198,6 +1206,7 @@ svg {
 @media screen and (min-width: 90rem) {
   .main__fold {
     background-size: 60%;
+    grid-template-rows: 1fr 2fr 2fr;
   }
 
   .main__protest {

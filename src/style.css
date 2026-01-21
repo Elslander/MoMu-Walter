@@ -845,6 +845,10 @@ svg {
   height: 8rem;
 }
 
+.logo__momu:hover #m2-footer {
+  fill: red;
+}
+
 .logos__images {
   max-width: 100%;
 
@@ -877,6 +881,12 @@ svg {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.socials__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
 }
 
 .socials__list {

@@ -772,9 +772,13 @@ svg {
 .main__conclusion {
   background-image: url("./assets/conclusion-bg.svg"),
     linear-gradient(to bottom, var(--color-yellow) 50%, var(--color-white) 50%);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 101%;
 
-  padding-block-start: 7rem;
+  padding-block-start: 25%;
   padding-inline: var(--space-xs);
+  margin-block-start: -5%;
 
   display: grid;
   grid-template-columns: 3fr 2fr 1fr;
@@ -1153,7 +1157,7 @@ svg {
   }
 
   .skull__image {
-    top:  3rem;
+    top: 3rem;
   }
 
   .healing__wolf {

@@ -153,6 +153,11 @@ p {
   writing-mode: vertical-lr;
 }
 
+.small {
+  font-size: var(--fontsize-2xs);
+  font-weight: normal;
+}
+
 img,
 svg {
   width: 100%;
@@ -918,8 +923,16 @@ svg {
     font-size: 5.5rem !important;
   }
 
+  h2 + p > a:hover {
+    color: var(--color-white);
+  }
+
   .chinese {
     font-size: 4.5rem;
+  }
+
+  .chinese a {
+    color: var(--color-green);
   }
 
   .main__fold {

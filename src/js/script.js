@@ -1,3 +1,6 @@
+import { gsap } from "gsap";
+// import { Draggable } from "gsap/Draggable";
+
 //! FLOWER INTERACTION
 gsap.registerPlugin(Draggable, InertiaPlugin);
 
@@ -69,6 +72,16 @@ const changeMood = () => {
 };
 
 gsap.registerPlugin(Draggable);
+
+//! SKULL INTERACTION
+const $skull = document.querySelector(".skull--hover");
+$skull.classList.remove('skull--hover');
+
+Draggable.create(".skull__illustration", {
+  type: "x",
+  inertia: true,
+  bounds: {minX: 0, maxX: 250},
+});
 
 //! TULIP INTERACTION
 // const maxDistance = 100;

@@ -1213,8 +1213,16 @@ svg {
     grid-template-rows: 1fr 4fr 4fr;
   }
 
+  .protest__start, .protest__end {
+    align-self: center;
+  } 
+
   .main__anger {
     grid-template-rows: 1fr 3fr 3fr;
+  }
+
+  .anger__start {
+    align-self: center;
   }
 
   .skull__image {

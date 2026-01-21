@@ -412,6 +412,26 @@ svg {
   border-radius: 10px;
 }
 
+.suitTie {
+  transform-origin: 50% 0%;
+
+  animation: tieSwing 2s infinite;
+}
+
+@keyframes tieSwing {
+  0% {
+    rotate: -2deg;
+  }
+
+  50% {
+    rotate: 2deg;
+  }
+
+  100% {
+    rotate: -2deg;
+  }
+}
+
 /** ANGER */
 .main__anger {
   background-image: url("./assets/anger-bg.svg"),
@@ -517,6 +537,44 @@ svg {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.skull__illustration {
+  grid-column: 1;
+  grid-row: 1;
+
+  overflow: visible;
+
+  z-index: +1;
+}
+
+.skull__image {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+
+  width: 35%;
+  border-radius: 5px;
+
+  position: relative;
+  top: 3rem;
+
+  /* z-index: -1; */
+}
+
+.skull--hover {
+  translate: 0% 0%;
+
+  transition: all 300ms ease-in-out;
+}
+
+.anger__skull:hover .skull--hover {
+  translate: 50% 0%;
 }
 
 .anger__skull .skullEye {
@@ -614,8 +672,6 @@ svg {
   position: absolute;
   top: 50%;
   left: 50%;
-  /* translate: 50% 50%; */
-  cursor: grab;
 }
 
 .tulipLeaf--right {
@@ -625,7 +681,7 @@ svg {
 
 .tulipLeaf--left {
   transform-origin: 100% 20%;
-  animation: leafWaveLeft 2.6s infinite;
+  animation: leafWaveLeft 2.3s infinite;
 }
 
 @keyframes leafWaveRight {
@@ -700,7 +756,7 @@ svg {
     translate: 100% -25%;
     rotate: -6deg;
   }
-  
+
   50% {
     translate: 0% -6%;
     rotate: 6deg;
@@ -892,6 +948,10 @@ svg {
     padding: var(--space-m);
   }
 
+  .skull__image {
+    top: -1rem;
+  }
+
   .protest__end {
     grid-column: 1;
     grid-row: 3;
@@ -900,26 +960,6 @@ svg {
   .protest__suit {
     grid-column: 2/4;
     grid-row: 3;
-  }
-
-  .suitTie {
-    transform-origin: 50% 0%;
-
-    animation: tieSwing 2s infinite;
-  }
-
-  @keyframes tieSwing {
-    0% {
-      rotate: -2deg;
-    }
-
-    50% {
-      rotate: 2deg;
-    }
-
-    100% {
-      rotate: -2deg;
-    }
   }
 
   .main__anger {
@@ -1049,6 +1089,10 @@ svg {
     align-self: flex-end;
   }
 
+  .skull__image {
+    top: 2rem;
+  }
+
   .main__healing {
     grid-template-rows: 1.5fr 4fr 5.5fr;
   }
@@ -1108,6 +1152,10 @@ svg {
     grid-template-rows: 2.5fr 3fr 3fr;
   }
 
+  .skull__image {
+    top:  3rem;
+  }
+
   .healing__wolf {
     grid-row: 2/4;
     align-self: center;
@@ -1154,6 +1202,10 @@ svg {
 
   .main__anger {
     grid-template-rows: 1fr 3fr 3fr;
+  }
+
+  .skull__image {
+    top: 5rem;
   }
 
   .main__healing {

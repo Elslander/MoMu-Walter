@@ -1222,7 +1222,7 @@ svg {
   }
 
   .anger__start {
-    align-self: center;
+    /* align-self: center; */
   }
 
   .skull__image {

@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 //! FLOWER INTERACTION
 gsap.registerPlugin(Draggable, InertiaPlugin);
 
-const $flowerPetals = document.querySelectorAll(".flowerPetal");
+const $flowerPetals = document.querySelectorAll(".petal");
 const $flowerCenter = document.querySelector(".center");
 
 const petalState = new WeakMap();
@@ -26,7 +26,7 @@ $flowerPetals.forEach((petal) => {
   });
 });
 
-Draggable.create(".flowerPetal", {
+Draggable.create(".petal", {
   type: "x,y",
   inertia: true,
   onDrag() {
@@ -82,33 +82,6 @@ Draggable.create(".skull__illustration", {
   inertia: true,
   bounds: {minX: 0, maxX: 250},
 });
-
-//! TULIP INTERACTION
-// const maxDistance = 100;
-
-// Draggable.create("#flowerTop", {
-//   type: "x,y",
-//   inertia: true,
-
-//   onDrag() {
-//     const distance = Math.hypot(this.x, this.y);
-
-//     if (distance > maxDistance) {
-//       const angle = Math.atan2(this.y, this.x);
-//       this.x = Math.cos(angle) * maxDistance;
-//       this.y = Math.sin(angle) * maxDistance;
-//     }
-//   },
-
-//   onRelease() {
-//     gsap.to(this.target, {
-//       x: 0,
-//       y: 0,
-//       duration: 0.6,
-//       ease: "elastic.out(1, 0.4)",
-//     });
-//   }
-// });
 
 const init = () => {
   console.log("file is linked");

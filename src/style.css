@@ -111,14 +111,14 @@ a {
 }
 
 p {
-  line-height: 120%;
+  line-height: 140%;
   font-weight: 500;
   font-size: var(--fontsize-s);
   text-wrap: pretty;
 
   max-width: 60ch;
 
-  z-index: 999;
+  z-index: +1000;
 }
 
 .textblock {
@@ -154,8 +154,13 @@ p {
 }
 
 .small {
+  color: inherit;
   font-size: var(--fontsize-2xs);
   font-weight: normal;
+}
+
+.hint::before, .hint::after {
+  content: " - ";
 }
 
 img,
@@ -372,7 +377,7 @@ svg {
   fill: var(--color-navy);
 }
 
-.pettle {
+.petal {
   position: relative;
 }
 
@@ -414,6 +419,9 @@ svg {
 
 .suit__back {
   transform: rotateY(180deg);
+  transform-origin: top center;
+  scale: 90%;
+
   border-radius: 10px;
 }
 
@@ -814,6 +822,15 @@ svg {
 
   height: fit-content;
   margin-inline-start: var(--space-s);
+}
+
+/** NOTICE */
+.main__notice {
+  font-size: var(--fontsize-2xs);
+  text-align: right;
+  
+  max-width: 100%;
+  margin-inline: var(--space-m);
 }
 
 /*! ----- FOOTER ----- */

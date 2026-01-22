@@ -80,7 +80,7 @@ $skull.classList.remove('skull--hover');
 Draggable.create(".skull__illustration", {
   type: "x",
   inertia: true,
-  bounds: {minX: 0, maxX: 250},
+  bounds: {minX: -250, maxX: 0},
 });
 
 const init = () => {

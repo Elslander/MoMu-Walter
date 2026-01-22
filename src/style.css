@@ -151,12 +151,18 @@ p {
   color: var(--color-green) !important;
   font-weight: normal !important;
   writing-mode: vertical-lr;
+
+  user-select: none;
 }
 
 .small {
   color: inherit;
   font-size: var(--fontsize-2xs);
   font-weight: normal;
+}
+
+.small, .hint {
+  user-select: none;
 }
 
 .hint::before,
@@ -589,8 +595,8 @@ svg {
   transition: all 300ms ease-in-out;
 }
 
-.anger__skull:hover .skull--hover {
-  translate: 50% 0%;
+.skull__illustration:hover .skull--hover {
+  translate: 35% 0%;
 }
 
 .anger__skull .skullEye {

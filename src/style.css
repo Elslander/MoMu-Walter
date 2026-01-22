@@ -159,7 +159,8 @@ p {
   font-weight: normal;
 }
 
-.hint::before, .hint::after {
+.hint::before,
+.hint::after {
   content: " - ";
 }
 
@@ -304,7 +305,7 @@ svg {
 
   display: grid;
   grid-template-columns: 3fr 2fr 1fr;
-  grid-template-rows: 1fr 2fr 5fr 2fr 6fr;
+  grid-template-rows: 1fr 2fr 3fr 2fr 4fr;
   row-gap: var(--space-s);
 }
 
@@ -448,7 +449,7 @@ svg {
 /** ANGER */
 .main__anger {
   background-image: url("./assets/anger-bg.svg"),
-    linear-gradient(to bottom, var(--color-navy) 20%, var(--color-red-dark) 58%);
+    linear-gradient(to bottom, var(--color-navy) 30%, var(--color-red-dark) 30%);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 101%;
@@ -487,7 +488,6 @@ svg {
   grid-row: 1/3;
 
   font-size: 3.5rem;
-  
 }
 
 .anger__man {
@@ -509,6 +509,7 @@ svg {
 
   transition: all 300ms ease-in-out;
 }
+
 .frustration--inactive {
   opacity: 0%;
 
@@ -576,6 +577,10 @@ svg {
 
   position: relative;
   top: 3rem;
+}
+
+.skull__illustration {
+  align-self: center;
 }
 
 .skull--hover {
@@ -655,7 +660,6 @@ svg {
   grid-row: 1/3;
 
   font-size: 3.5rem;
-
 }
 
 .healing__start {
@@ -828,7 +832,7 @@ svg {
 .main__notice {
   font-size: var(--fontsize-2xs);
   text-align: right;
-  
+
   max-width: 100%;
   margin-inline: var(--space-m);
 }
@@ -929,6 +933,14 @@ svg {
     grid-row: 1;
     align-self: flex-end;
   }
+
+  .skull__image {
+    top: 3.5rem;
+  }
+
+  .main__protest .chinese, .main__anger .chinese, .main__healing .chinese, .main__conclusion .chinese {
+    margin-top: var(--space-xl);
+  }
 }
 
 @media screen and (min-width: 40rem) {
@@ -989,7 +1001,7 @@ svg {
   }
 
   .skull__image {
-    top: -1rem;
+    top: 2rem;
   }
 
   .protest__end {
@@ -1003,8 +1015,10 @@ svg {
   }
 
   .main__anger {
+    /* background: url('./assets/anger-bg.svg'), linear-gradient(to bottom, var(--color-navy) 20%, var(--color-red-dark) 20%); */
     grid-template-rows: 1.5fr 3fr 3fr;
 
+    /* padding-block-start: 30%; */
     padding-inline: var(--space-xl);
   }
 
@@ -1098,6 +1112,10 @@ svg {
     font-size: 6rem;
   }
 
+  .main__fold {
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+  }
+
   .protest__start {
     align-self: flex-start;
   }
@@ -1113,7 +1131,8 @@ svg {
   .protest__suit {
     grid-row: 2/4;
     align-self: flex-end;
-    margin-block-start: var(--space-xl);
+
+    margin-block-end: calc(-1 * var(--space-xl));
   }
 
   .main__anger {
@@ -1125,16 +1144,22 @@ svg {
   }
 
   .anger__skull {
+    background-image: url("./assets/skull-bg-desktop.svg");
+
     grid-row: 2/4;
     align-self: flex-end;
   }
 
   .skull__image {
-    top: 2rem;
+    top: 2.5rem;
   }
 
   .main__healing {
     grid-template-rows: 1.5fr 4fr 5.5fr;
+  }
+
+  .healing__tulip {
+    background-image: url("./assets/tulip-bg-desktop.svg");
   }
 }
 
@@ -1171,6 +1196,10 @@ svg {
     justify-self: flex-end;
 
     margin-block-start: var(--space-m);
+
+
+    display: flex;
+    gap: var(--space-s);
   }
 
   .fold__start p {
@@ -1186,6 +1215,7 @@ svg {
     grid-template-rows: 1.5fr 3fr 2fr;
 
     padding-block-start: 40%;
+    padding-block-end: 10%;
     padding-inline-start: var(--space-2xl);
     margin-top: -5rem;
   }
@@ -1247,9 +1277,10 @@ svg {
     grid-template-rows: 1fr 4fr 4fr;
   }
 
-  .protest__start, .protest__end {
+  .protest__start,
+  .protest__end {
     align-self: center;
-  } 
+  }
 
   .main__anger {
     grid-template-rows: 1fr 3fr 3fr;

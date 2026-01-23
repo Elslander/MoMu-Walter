@@ -186,6 +186,12 @@ svg {
   padding: var(--space-s) var(--space-m);
   display: flex;
   justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+
+
+  z-index: +9999;
 }
 
 .header__logo {
@@ -202,6 +208,8 @@ svg {
 }
 
 .nav__item {
+  background-color: var(--color-white);
+
   padding: var(--space-2xs) var(--space-s);
   border-radius: var(--space-l);
   box-shadow: 8px 10px 37px rgba(0, 0, 0, 0.2);
@@ -840,6 +848,7 @@ svg {
   grid-row: 3;
 
   height: fit-content;
+  min-width: fit-content;
   margin-inline-start: var(--space-s);
 }
 

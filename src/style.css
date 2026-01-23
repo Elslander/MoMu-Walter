@@ -161,7 +161,8 @@ p {
   font-weight: normal;
 }
 
-.small, .hint {
+.small,
+.hint {
   user-select: none;
 }
 
@@ -952,7 +953,10 @@ svg {
     top: 3.5rem;
   }
 
-  .main__protest .chinese, .main__anger .chinese, .main__healing .chinese, .main__conclusion .chinese {
+  .main__protest .chinese,
+  .main__anger .chinese,
+  .main__healing .chinese,
+  .main__conclusion .chinese {
     margin-top: var(--space-xl);
   }
 }
@@ -986,13 +990,26 @@ svg {
     grid-template-rows: 2fr 3fr 1fr 2fr;
   }
 
-  .fold__cta,
+  
   .fold__start {
     align-self: center;
   }
 
-  .fold__cta a {
-    display: block;
+  .fold__cta {
+    align-self: flex-start;
+
+    height: fit-content;
+    margin-bottom: var(--space-m);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* align-content: flex-end; */
+    gap: var(--space-l);
+  }
+
+  .fold__cta a:first-child {
+    display: inline;
   }
 
   .main__protest {
@@ -1134,6 +1151,10 @@ svg {
     grid-template-rows: 1fr 1fr 1fr 2fr;
   }
 
+  .fold__cta {
+     align-self: center;
+  }
+
   .protest__start {
     align-self: flex-start;
   }
@@ -1214,7 +1235,6 @@ svg {
     justify-self: flex-end;
 
     margin-block-start: var(--space-m);
-
 
     display: flex;
     gap: var(--space-s);

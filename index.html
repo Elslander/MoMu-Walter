@@ -352,7 +352,21 @@
                 d="M387.438 183V181.64C389.718 181.32 390.598 180.64 390.598 178.84V160.44C390.598 158.64 389.718 157.96 387.438 157.64V156.28H407.638L408.998 164.04H407.598C406.238 159.76 404.998 157.76 400.918 157.76H395.958V168.52H399.438C401.438 168.52 402.398 167.6 402.598 164.6H403.958V174H402.598C402.398 171 401.438 170 399.438 170H395.958V178.8C395.958 180.68 396.958 181.36 400.398 181.64V183H387.438ZM423.379 183.6C415.539 183.6 410.139 177.8 410.139 169.92C410.139 161.68 416.019 155.68 424.019 155.68C431.939 155.68 437.219 161.56 437.219 169.4C437.219 177.6 431.379 183.6 423.379 183.6ZM424.259 182.16C428.619 182.16 431.539 177.48 431.539 170.68C431.539 163.16 428.019 157.12 423.179 157.12C418.819 157.12 415.859 161.68 415.859 168.6C415.859 176.16 419.379 182.16 424.259 182.16ZM439.039 183V181.64C441.319 181.32 442.199 180.68 442.199 178.84V160.44C442.199 158.64 441.319 157.96 439.039 157.64V156.28H450.999C457.359 156.28 461.399 158.88 461.399 163.48C461.399 166.84 459.199 169.16 455.479 170.16L460.399 178.64C461.519 180.68 462.959 181.44 465.159 181.64V183H456.359C456.239 182.32 455.919 181.56 455.319 180.52L449.719 170.68H447.559V178.84C447.559 180.68 448.439 181.32 450.599 181.64V183H439.039ZM447.559 169.2H450.039C453.599 169.2 455.679 166.88 455.679 163.48C455.679 160.08 453.559 157.76 450.039 157.76H447.559V169.2Z"
                 fill="#BD060A" />
             </svg>
-            <img class="suit__back suitSide" src="./src/assets/suit-image.png" alt="">
+            <img class="suit__back suitSide" srcset="
+                ./src/assets/suit-image-256.avif 256w,
+                ./src/assets/suit-image-544.avif 544w,
+                ./src/assets/suit-image-712.avif 712w,
+                ./src/assets/suit-image-807.avif 807w,
+                ./src/assets/suit-image-1020.avif 1020w,
+                ./src/assets/suit-image-1196.avif 1196w,
+                ./src/assets/suit-image-1380.avif 1380w,
+                ./src/assets/suit-image-1530.avif 1530w,
+                ./src/assets/suit-image-1680.avif 1680w,
+                ./src/assets/suit-image-1810.avif 1810w,
+                ./src/assets/suit-image-1930.avif 1930w,
+                ./src/assets/suit-image-2048.avif 2048w," sizes="
+    (min-width: 640px) calc(39.15vw - 31px), calc(79.69vw - 18px)
+  " src="./src/assets/suit-image.png" alt="">
           </div>
         </div>
       </section>
@@ -716,7 +730,11 @@
           <p><span class="small hint">Click on the frustrated person to change moods.</span></p>
         </div>
         <div class="anger__skull">
-          <img class="skull__image" src="./src/assets/mask-image.png" alt="image of a model wearing a mask">
+          <img class="skull__image" srcset="./src/assets/mask-image/mask-image-354.avif 354w,
+            ./src/assets/mask-image/mask-image-684.avif 684w,
+            ./src/assets/mask-image/mask-image-990.avif 990w"
+            sizes="(min-width: 800px) calc(17.64vw - 35px), (min-width: 640px) calc(20vw - 47px), calc(34.69vw - 7px)"
+            src="./src/assets/mask-image/mask-image-684.avif" alt="image of a model wearing a mask">
           <svg class="skull__illustration" width="360" height="409" viewBox="0 0 360 409" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g class="skull--hover">

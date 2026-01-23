@@ -32,6 +32,7 @@
   --fontsize-l: clamp(1.44rem, 1.0207rem + 1.7072vw, 2.3438rem);
   --fontsize-xl: clamp(1.728rem, 1.1704rem + 2.27vw, 2.9297rem);
   --fontsize-2xl: clamp(2.0736rem, 1.3365rem + 3.0007vw, 3.6621rem);
+  --fontsize-title: clamp(5.5rem, -3.5rem + 22.5vw, 10rem);
 }
 
 /*? ----- font ----- */
@@ -66,7 +67,7 @@ h2 {
 }
 
 h2 {
-  font-size: 4.5rem;
+  font-size: var(--fontsize-title);
   text-transform: uppercase;
 }
 
@@ -189,7 +190,6 @@ svg {
 
   position: sticky;
   top: 0;
-
 
   z-index: +9999;
 }
@@ -358,7 +358,7 @@ svg {
 }
 
 .title__globe {
-  width: 3.2rem;
+  width: 3.8rem;
   stroke: var(--color-red-dark);
 }
 
@@ -976,7 +976,7 @@ svg {
   }
 
   h2 {
-    font-size: 5.5rem !important;
+    /* font-size: 5.5rem !important; */
   }
 
   h2 + p > a:hover {
@@ -999,7 +999,6 @@ svg {
     grid-template-rows: 2fr 3fr 1fr 2fr;
   }
 
-  
   .fold__start {
     align-self: center;
   }
@@ -1149,7 +1148,7 @@ svg {
 
 @media screen and (min-width: 50rem) {
   h2 {
-    font-size: 7.5rem !important;
+    /* font-size: 7.5rem !important; */
   }
 
   .chinese {
@@ -1161,7 +1160,7 @@ svg {
   }
 
   .fold__cta {
-     align-self: center;
+    align-self: center;
   }
 
   .protest__start {
@@ -1213,7 +1212,7 @@ svg {
 
 @media screen and (min-width: 60rem) {
   h2 {
-    font-size: 10rem !important;
+    /* font-size: 10rem !important; */
   }
 
   .chinese {

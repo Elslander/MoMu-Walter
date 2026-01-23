@@ -227,12 +227,13 @@ svg {
   background-size: contain;
   background-position: 0 40%;
 
+  height: 125dvh;
   padding: 0 var(--space-m);
   margin-block-start: var(--space-m);
 
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 2fr 1fr 2fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
 }
 
 .fold__title {
@@ -271,8 +272,15 @@ svg {
   grid-column: 2;
   grid-row: 4;
 
-  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   z-index: +1000;
+}
+
+.fold__cta a:first-child {
+  display: none;
 }
 
 .fold__start {
@@ -981,6 +989,10 @@ svg {
   .fold__cta,
   .fold__start {
     align-self: center;
+  }
+
+  .fold__cta a {
+    display: block;
   }
 
   .main__protest {

@@ -1,10 +1,5 @@
-// Initialize Lenis
-const lenis = new Lenis({
-  autoRaf: true,
-});
-
 import { gsap } from "gsap";
-// import { Draggable } from "gsap/Draggable";
+import Lenis from "lenis";
 
 //! FLOWER INTERACTION
 gsap.registerPlugin(Draggable, InertiaPlugin);
@@ -88,8 +83,13 @@ Draggable.create(".skull__illustration", {
   bounds: { minX: -250, maxX: 0 },
 });
 
+//! SMOOTHSCROLL
+const lenis = new Lenis({
+  autoRaf: true,
+});
+
+// INIT
 const init = () => {
-  console.log("file is linked");
   $card?.addEventListener("click", flip);
   $angerMan.addEventListener("click", changeMood);
 };

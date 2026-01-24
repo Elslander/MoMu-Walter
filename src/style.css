@@ -355,8 +355,7 @@ svg {
 }
 
 #globe {
-  margin-inline-start: -0.5rem;
-  margin-inline-end: -0.5rem;
+  margin-inline: -1rem;
 }
 
 .title__globe {
@@ -826,7 +825,7 @@ svg {
 }
 
 .conclusion__title {
-  font-size: 4rem;
+  /* font-size: 4rem; */
   grid-column: 1/4;
   grid-row: 1;
 }
@@ -1323,6 +1322,7 @@ svg {
 
   .main__protest {
     grid-template-rows: 1fr 4fr 4fr;
+    padding-block-end: var(--space-m);
   }
 
   .protest__start,

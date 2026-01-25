@@ -1313,6 +1313,7 @@ svg {
   .healing__wolf {
     grid-row: 2/4;
     align-self: center;
+    margin-top: var(--space-2xl);
   }
 
   .body__footer {
